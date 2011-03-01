@@ -17,7 +17,7 @@ data Heap a = Empty | Fork a [Heap a]
 
 -- defined here, because it uses |Heap| constructors
 instance Arbitrary a => Arbitrary (Heap a) where
-  arbitrary = Empty ? Fork arbitrary arbitrary
+  arbitrary () = Empty ? Fork (arbitrary ()) (arbitrary ())
 
 isEmptyHeap :: Heap a -> Bool
 isEmptyHeap Empty       = True

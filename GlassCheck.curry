@@ -32,7 +32,7 @@ instance Testable Answer where
 
 instance (Show a, Arbitrary a, Testable b) => Testable (a -> b)
   where  test p = fmap (show x:) (test (p x)) 
-           where x = arbitrary
+           where x = arbitrary ()
 
 quickCheck :: Testable a => a -> IO ()
 quickCheck = rndCheck 100

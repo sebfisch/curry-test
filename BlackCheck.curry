@@ -41,7 +41,7 @@ instance Testable Bool where
                                         _    -> False)
 
 instance (Show a, Arbitrary a, Testable b) => Testable (a -> b) where
-  tests p = do  x <- Search (getSearchTree arbitrary)
+  tests p = do  x <- Search (getSearchTree (arbitrary ()))
                 fmap (\t -> t {input = show x : input t}) (tests (p x))
 
 -- BlackCheck can also check I/O properties.
