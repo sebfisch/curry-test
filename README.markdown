@@ -55,3 +55,9 @@ from my dissertation, some of which use heaps defined in
 black-box and glass-box testing. The remaining files
 `SearchStrategies.curry` and `TreeSearch.curry` are used internally to
 implement glass-box testing.
+
+Because of the `Arbitrary` class used for specifying test-case
+generators, these modules require the type-class branch of the
+[Münster Curry Compiler][MCC].
+
+[MCC]: http://danae.uni-muenster.de/~lux/curry/
