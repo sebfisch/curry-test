@@ -61,3 +61,7 @@ generators, these modules require the type-class branch of the
 [Münster Curry Compiler][MCC].
 
 [MCC]: http://danae.uni-muenster.de/~lux/curry/
+
+Alle Quelltexte von `curry-test` sind unter der [CC BY-SA 4.0] Lizenz veröffentlicht.
+
+[CC By-SA 4.0]: https://creativecommons.org/licenses/by-sa/4.0/
